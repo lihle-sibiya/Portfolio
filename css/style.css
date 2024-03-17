@@ -1590,9 +1590,5 @@ a:focus {
         line-height: 16px;
         padding: 0 5px;
     }
-
-    /* Add the provided code here */
-.red-square-wrapper {
-    margin-top: 10px; /* Adjust the margin as needed */
-}
+    
 }
