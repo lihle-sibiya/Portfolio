@@ -257,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+                <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-lg-4 col-md-6 portfolio-item" data-filter="react">
                         <div class="portfolio-wrap">
                             <img src="img\Personal-Bookshelf.jpeg" class="img-fluid" alt="Personal Bookshelf">
@@ -284,7 +284,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
@@ -485,28 +485,25 @@
                         <div class="col-md-4"></div>
                         <div class="col-md-8">
                             <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <h2>Contact Me</h2>
+                                <form name="contactForm" id="contactForm" action="mail/contact.php" method="POST">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                            required="required"
-                                            data-validation-required-message="Please enter your name" />
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                            required="required" data-validation-required-message="Please enter your name" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                            required="required"
-                                            data-validation-required-message="Please enter your email" />
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                            required="required" data-validation-required-message="Please enter your email" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                            required="required"
-                                            data-validation-required-message="Please enter a subject" />
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                            required="required" data-validation-required-message="Please enter a subject" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message"
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message"
                                             required="required"
                                             data-validation-required-message="Please enter your message"></textarea>
                                         <p class="help-block"></p>
