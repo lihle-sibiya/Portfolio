@@ -297,138 +297,179 @@
     <!-- About End -->
 
 
-<!-- Portfolio Section -->
-<section class="portfolio">
+<!-- Portfolio Start -->
+<div class="portfolio" id="portfolio">
     <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Portfolio</p>
+            <h2>My Excellent Portfolio</h2>
+        </div>
         <div class="row">
-            <div class="col-lg-12 text-center mb-5">
-                <h1>My Portfolio</h1>
-                <p>Explore some of the projects I've worked on.</p>
+            <div class="col-12">
+                <ul id="portfolio-filter">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".react">React</li>
+                    <li data-filter=".react-native">React Native</li>
+                    <li data-filter=".filter-1">Web Development</li>
+                    <li data-filter=".filter-2">Mobile Apps</li>
+                    <li data-filter=".filter-3">Web Apps</li>
+                </ul>
             </div>
         </div>
-        <div class="portfolio-wrap">
-            <!-- Project 1: Barcode Scanner App -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project1.jpg" alt="Barcode Scanner App">
-                </div>
-                <div class="portfolio-text">
-                    <h3>Barcode Scanner App</h3>
-                    <p>A mobile app built for barcode scanning using React Native.</p>
-                    <a href="#" class="btn">View Details</a>
+
+        <div class="row portfolio-container">
+            <!-- Project 1: Weather App -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="https://theeweatherapp.netlify.app/" target="_blank">
+                            <img src="img/Weather.jpeg" alt="Weather App Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Weather App</h3>
+                        <p>A React app using the Weather API to display current weather conditions based on user input.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Project 2: Creative Espresso Website -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project2.jpg" alt="Creative Espresso Website">
-                </div>
-                <div class="portfolio-text">
-                    <h3>Creative Espresso Website</h3>
-                    <p>A static website hosted on AWS S3, built using Bootstrap for a fictional café.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-
-            <!-- Project 3: Alarm Clock App (MERN) -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project3.jpg" alt="Alarm Clock App (MERN)">
-                </div>
-                <div class="portfolio-text">
-                    <h3>Alarm Clock App (MERN)</h3>
-                    <p>A full-stack MERN application that serves as an alarm clock with notifications.</p>
-                    <a href="#" class="btn">View Details</a>
+            <!-- Project 2: Barcode Scanner App -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 react-native wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/barcode_scanner.jpg" alt="Barcode Scanner App Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Barcode Scanner App</h3>
+                        <p>A mobile app built with React Native for scanning barcodes using the device camera.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Project 4: React To-do List -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project4.jpg" alt="React To-do List">
-                </div>
-                <div class="portfolio-text">
-                    <h3>React To-do List</h3>
-                    <p>A simple, effective to-do list app built in React with state management.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-
-            <!-- Project 5: Personal Portfolio -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project5.jpg" alt="Personal Portfolio">
-                </div>
-                <div class="portfolio-text">
-                    <h3>Personal Portfolio</h3>
-                    <p>This portfolio website, built using HTML, CSS, and Bootstrap, showcasing my projects.</p>
-                    <a href="#" class="btn">View Details</a>
+            <!-- Project 3: Creative Espresso Website -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/creative_espresso.jpg" alt="Creative Espresso Website Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Creative Espresso Website</h3>
+                        <p>A static website for a café built using Bootstrap and hosted on AWS S3.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Project 6: Data Visualizer (Practical SQL) -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project6.jpg" alt="Data Visualizer (Practical SQL)">
-                </div>
-                <div class="portfolio-text">
-                    <h3>Data Visualizer (Practical SQL)</h3>
-                    <p>A data visualization tool created using SQL and JavaScript, visualizing large datasets.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-
-            <!-- Project 7: Full-Stack E-Commerce App -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project7.jpg" alt="Full-Stack E-Commerce App">
-                </div>
-                <div class="portfolio-text">
-                    <h3>Full-Stack E-Commerce App</h3>
-                    <p>A MERN stack e-commerce app with integrated payment gateways and user authentication.</p>
-                    <a href="#" class="btn">View Details</a>
+            <!-- Project 4: Alarm Clock App (MERN) -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 react wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/alarm_clock.jpg" alt="Alarm Clock App Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Alarm Clock App (MERN)</h3>
+                        <p>A full-stack MERN app with notification features for setting alarms.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Project 8: AWS Lambda Serverless App -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project8.jpg" alt="AWS Lambda Serverless App">
-                </div>
-                <div class="portfolio-text">
-                    <h3>AWS Lambda Serverless App</h3>
-                    <p>An AWS Lambda-based serverless web app with cloud function integration.</p>
-                    <a href="#" class="btn">View Details</a>
+            <!-- Project 5: React To-do List -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 react wow fadeInUp" data-wow-delay="0.4s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/todo_list.jpg" alt="React To-do List Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>React To-do List</h3>
+                        <p>A to-do list application built in React, leveraging state management and hooks.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Project 9: Java SE 8 Fundamentals -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project9.jpg" alt="Java SE 8 Fundamentals">
+            <!-- Project 6: Personal Portfolio -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/portfolio.jpg" alt="Personal Portfolio Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Personal Portfolio</h3>
+                        <p>A personal portfolio website showcasing projects, built with HTML, CSS, and Bootstrap.</p>
+                    </div>
                 </div>
-                <div class="portfolio-text">
-                    <h3>Java SE 8 Fundamentals</h3>
-                    <p>A tutorial-based project focusing on manipulating and formatting data using Java.</p>
-                    <a href="#" class="btn">View Details</a>
+            </div>
+
+            <!-- Project 7: Data Visualizer (Practical SQL) -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/data_visualizer.jpg" alt="Data Visualizer Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Data Visualizer (Practical SQL)</h3>
+                        <p>A data visualization tool created using SQL and JavaScript to explore large datasets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8: Full-Stack E-Commerce App -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/e_commerce.jpg" alt="E-Commerce App Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>Full-Stack E-Commerce App</h3>
+                        <p>A MERN stack e-commerce application with integrated payment gateway and authentication.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 9: AWS Lambda Serverless App -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/serverless_app.jpg" alt="AWS Lambda Serverless App Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>AWS Lambda Serverless App</h3>
+                        <p>A serverless web app built using AWS Lambda, with integrated cloud functions.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Project 10: AWS re/Start Cloud Labs -->
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/project10.jpg" alt="AWS re/Start Cloud Labs">
-                </div>
-                <div class="portfolio-text">
-                    <h3>AWS re/Start Cloud Labs</h3>
-                    <p>Cloud labs completed as part of the AWS re/Start program, covering serverless architecture.</p>
-                    <a href="#" class="btn">View Details</a>
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <a href="#" target="_blank">
+                            <img src="img/aws_restart.jpg" alt="AWS re/Start Cloud Labs Screenshot">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>AWS re/Start Cloud Labs</h3>
+                        <p>Hands-on labs completed as part of the AWS re/Start program, covering cloud architecture.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- Portfolio End -->
 
 
