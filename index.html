@@ -24,6 +24,80 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for the Portfolio Layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .portfolio {
+            padding: 60px 0;
+        }
+
+        .portfolio .portfolio-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            width: calc(50% - 15px);
+            position: relative;
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item .portfolio-img {
+            overflow: hidden;
+        }
+
+        .portfolio-item .portfolio-img img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover .portfolio-img img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-item .portfolio-text {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .portfolio-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .portfolio-item p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-item a.btn {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #EF233C;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-item a.btn:hover {
+            background-color: #d90429;
+        }
+    </style>
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
