@@ -425,10 +425,10 @@ a:focus {
     margin-bottom: 10px;
     padding-left: 15px;
     position: relative;
+    letter-spacing: 1px;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
     background: #ffffff;
 }
 
